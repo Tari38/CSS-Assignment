@@ -21,6 +21,6 @@
 
 ## Requirements
 
--   [ ] - Import the font Roboto.  
+-   [ X ] - Import the font Roboto.  
 -   [ ] - Make the homepage as close to the design provided, possible.  
 -   [ ] - Add 2 more pages.  
