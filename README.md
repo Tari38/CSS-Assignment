@@ -23,7 +23,7 @@
 
 -   [ X ] - Import the font Roboto.  
 
--   [ ] - Make the homepage as close to the design provided, possible. 
-![screenshot website clone](site1.png?raw=true "Example") 
-![screenshot website clone](site2.png?raw=true "Example2") 
+-   [ ] - Make the homepage as close to the design provided, possible.   
+![screenshot website clone](./images/site1.png?raw=true "Example")   
+![screenshot website clone](./images/site2.png?raw=true "Example2") 
 -   [ ] - Add 2 more pages.  
