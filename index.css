@@ -37,7 +37,7 @@ header, .hero-section  {
 }
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     width: 60%;
 }
 .nav-link {
@@ -45,6 +45,7 @@ nav {
     text-decoration: none;
     font-size: 18px;
     color: #e5e7eb;    
+    margin: 0 20px;
 }
 /* end header / nav section  */
 
