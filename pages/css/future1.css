@@ -198,7 +198,7 @@ nav {
 #products-btn {
     display: flex;
     flex-direction: column;
-    width: 50vw;
+    width: 60vw;
     margin: auto;
     align-items: center;
     padding: 10px;
@@ -217,7 +217,8 @@ footer {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 3%;
+    padding: 2%;
+    margin: auto;
 }
 
 #footer-form {
@@ -225,6 +226,7 @@ footer {
     padding: 10px;
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
     border-radius: 10px;
 }
@@ -258,7 +260,7 @@ label, input {
         background-color: #1f2937;
     }
     header {
-        width: 100%;
+        width: 100vw;
     }
     nav {
         display: flex;
@@ -269,7 +271,7 @@ label, input {
     .hero-section, .products-section {
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 100vw;
         margin: auto;
         justify-content: center;
         align-items: center;
@@ -286,15 +288,16 @@ label, input {
 
 /* Galaxy fold mobile */
 @media only screen and (max-width: 280px) {
-    main {
-        width: 100%;
+    body {
+        width: 100vw; 
+        background-color: #1f2937;       
     }
     header {
         justify-content: space-evenly;  
         height: 100px; 
     }
     .header-logo {
-        margin-left: -150px;
+        margin-left: -140px;
     }
     nav {
         display: flex;
@@ -303,14 +306,17 @@ label, input {
         justify-content: center;
         align-items: center;
     }
-
     .nav-link {
-        font-size: 16px;
+        font-size: 18px;
     }
-    
+    /* mobile hero section */
     .hero-section {
+        display: flex;
+        flex-direction: column;
         margin: auto;
-        padding: 5px;
+        padding: 10px;
+        justify-content: space-around;
+        align-items: center;
     }    
     .hero-section h1 {
         font-size: 26px;
@@ -322,14 +328,16 @@ label, input {
     .hero-section h2 {
         font-size: 22px;
         color: #fff;
-        padding: 0 10px;
+        padding: 10px;
     }
     .hero-section p {
         font-size: 14px;
         text-align: center;
         padding: 10px;
-        line-height: 1.5;
+        line-height: 1.6;
+        letter-spacing: 1.4px;
     }
+    /* mobile product section */
     .grid-container {
         border-radius: 0;
         width: 100vw;
@@ -339,20 +347,28 @@ label, input {
         white-space: nowrap;
     }
     .product-box {
-        width: 95vw;
+        width: 100vw;
         padding: 0;
         margin: auto;
         border: none;
     }
     .product-box-img {
-        width: 90%;
+        width: 100vw;
         padding: 0;
         margin: 0;
     }
-    button {
-        margin: 10px 0;
-        width: 50vw;
+    .product-text {
+        font-size: 16px;
+        overflow-wrap: normal;
     }
+    /* mobile buttons */
+    button, #products-btn {
+        display: block;
+        width: 70vw;
+        margin: auto;
+        text-align: center;
+    }
+    /* mobile footer */
     footer {
         flex-direction: column;
         width: 100vw;
