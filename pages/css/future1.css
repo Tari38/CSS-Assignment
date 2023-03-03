@@ -69,6 +69,10 @@ header, .hero-section  {
     padding: 1% 5%;
 }
 
+header {
+    justify-content: space-between;
+}
+
 nav {
     display: flex;
     justify-content: flex-end;
