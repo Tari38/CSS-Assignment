@@ -1,7 +1,6 @@
 body {
     margin: 0;
     padding: 0;
-    height: 100vh;
     width: 100vw;
 }
 
@@ -20,6 +19,7 @@ button {
     font-weight: 900;
     text-align: center;
     cursor: pointer;
+    margin: 5px 0;
 }
 
 /* start header / nav section  */
@@ -28,13 +28,12 @@ header, .hero-section  {
     justify-content: space-between;
     background-color: #1f2937;
     padding: 1% 5%;
-    margin: 20px 70px 20px;
 }
+
 header{
     margin-bottom: 0px;
-    padding: 20px 150px 20px;
-    
 }
+
 .header-logo {
     font-size: 24px;
     color: #f9faf8;
@@ -42,11 +41,13 @@ header{
     width: 30%;
     margin-left: 10px;
 }
+
 nav {
     display: flex;
     justify-content: flex-end;
     width: 60%;
 }
+
 .nav-link {
     align-self: center;
     text-decoration: none;
@@ -60,35 +61,37 @@ nav {
 
 /* start hero section */
 .hero-section {
-    padding: 5px 150px 200px;
-    margin-top: 0px;
-
- 
+    width: 100vw; 
+    justify-content: center;
 }
+
 .hero-col1 {
     display: flex;
     flex-direction: column;
-    width: 50vw;
+    width: 50%;
     padding: 10px;
+    margin: 0 10px;
 }
+
 .hero-section h1 {
     font-size: 48px;
     font-weight: 900;
     color: #f9faf8;
-    margin: 0px 0 10px;
 }
+
 .hero-section p  {
     font-size: 18px;
+    margin-top: -20px;
     color: #e5e7eb;
-    margin-top: 0;
-    padding: 10px;
 }
+
 .hero-col2 {
     display: flex;
     background-color: #808080;
-    width: 50vw;
+    width: 50%;
     justify-content: center;    
 }
+
 .placeholder {
     color: #e5e7eb;
     align-self: center;
@@ -101,7 +104,6 @@ nav {
 .info-section {
     display: flex;
     flex-direction: column;
-    padding: 2%;
 }
 
 .info-section h3 {
@@ -115,7 +117,6 @@ nav {
     justify-content: space-evenly;
     margin: 20px auto;
 }
-
 
 .info-row {
     display: flex;
@@ -160,7 +161,6 @@ nav {
     background-color: #e5e7eb;
     justify-content: center;
     align-items: center;
-    margin: 80px;
     margin-bottom: 0px;
 }
 
@@ -171,7 +171,7 @@ nav {
     font-style: italic;
     color: #1f2937;
     text-align: left;
-    padding: 5%;
+    padding: 8%;
 }
 
 .legend {
@@ -191,28 +191,27 @@ nav {
 
 .cta-section {
     display: flex;
-    width: 80%;
+    width: 100vw;
     margin: auto;
-    padding: 5%;
+    padding: 5% 0;
+    justify-content: center;
+    align-items: center;
 }
 
 .cta-banner {
     display: flex;
     flex-direction: row;
     background-color: #3882f6;
-    border-radius: 5px;
-    margin: 5px 260px 5px;
+    border-radius: 5px;    
     height: 110px;
-    width: 90%;
+    width: 80vw;
     justify-content: space-evenly;
-    align-items: center;
-  
+    align-items: center;  
 }
 
 aside {
     color: #fff;
     justify-content: center;
-    align-items: center;
 }
 
 .cta-btn {
@@ -256,6 +255,7 @@ footer {
         margin: 10px 0;
         padding: 10px 0;
     }
+    
     .hero-section, .info-section, .quote-section, .cta-section {
         display: flex;
         flex-direction: column;
@@ -266,6 +266,7 @@ footer {
         width: 100%;
         height: auto;
     }
+
     .hero-col1, .hero-col2, .info-col, .cta-banner {
         width: 100%;
         margin: auto;
@@ -273,27 +274,33 @@ footer {
         justify-content: center;
         align-items: center;
     }
+
     .info-row {
         display: flex;
         flex-direction: column;
     }
-    .cta-banner {
+
+    .cta-banner, aside {
         flex-direction: column;
         line-height: normal;
         height: auto;
         width: 100vw;
     }
+
     aside p {
         width: 90%;
         padding: 10px;
     }
-    .quote-section p {
+
+    .quote-section q {
         font-size: 28px;
         text-align: center;
     }
+
     .grid {
         flex-direction: column;
     }
+
     .cta-banner {
         padding: 5px;
         margin-bottom: 10px;
@@ -302,55 +309,63 @@ footer {
 
 /* Galaxy fold mobile */
 @media only screen and (max-width: 280px) {
-    body {
-        width: 100vw;
-    }
+
     header {
-        justify-content: space-evenly; 
-        height: 100px;   
+        justify-content: space-evenly;  
+        height: 100px; 
+        padding: 0 5px;
     }
+
     .header-logo {
-        margin-left: -100px;
+        margin-left: -95px;
     }
+
     nav {
+        flex-direction: row;
         width: 100vw;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-items: center;
-        margin: 0 10px;
-        padding-left: 10px;
     }
+
     .nav-link {
         font-size: 14px;
-        margin: auto;
     }
+
+    /* mobile hero section */
     
     .hero-section {
         width: 100vw;
-        margin: auto;
         padding: 0;
     }
     
     .hero-section h1 {
-        font-size: 30px;
+        font-size: 28px;
     }
+
     .hero-section p {
         width: 90vw;
-        font-size: 14px;
+        font-size: 16px;
         text-align: center;
-        padding: 5px;
+        padding-bottom: 5px;
         margin: auto;
     }
-    .quote-section p, .legend {
+
+    .quote-section q, .legend {
         font-size: 18px;
         padding: 0;
     }
+
     .cta-banner {
         width: 100vw;
         padding: 5px;
         margin-bottom: 10px;
     }
+
     aside p {
         padding: 5px;
+    }
 
+    .cta-btn {
+        margin: 5px 0;
     }
 }
