@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,600;1,400;1,600&family=Roboto:ital,wght@0,400;0,900;1,300&display=swap" 
+        rel="stylesheet">
+    <!-- css styles for index page -->
+    <link href="./css/future1.css" rel="stylesheet">
+    <title>DDVR - The Future is Now</title>
+</head>
+<body>
+    <header class="hero">
+        <img 
+            class="header-logo" 
+            src="../images/vr/DDVR.gif" 
+            alt="Deep Dive Virtual Reality logo">
+        <nav>
+            <a href="../index.html" class="nav-link">Home</a>
+            <a href="./future2.html" class="nav-link">Come and Play</a>
+            <a href="./team.html" class="nav-link">Our Team</a>
+        </nav>
+    </header>
+
+    <main class="parallax">
+        <section id="hero" class="hero-section">               
+            <h1>The Future is Now!</h1>  
+            <img 
+                class="placeholder-img" 
+                src="../images/vr/childvr.jpg" 
+                alt="a young child wearing a VR headset">     
+            <h2>But wait....what on Earth is DDVR?</h2>
+            <p><strong>DDVR stands for Deep Dive Virtual Reality. It is also known as Fully Immersive Virtual Reality.</strong></p>
+            <p><em>Be a part of it by signing up today.</em> <span class="hero-span-text">Accessible to all! </span>Come on... get your virtual on!.</p> 
+            <a href="#footer-form">
+                <button>Let Me Know!</button>
+            </a>                      
+        </section>
+
+        <section id="products" class="products-section">
+            <div class="col">
+                <h3>Featured Products</h3>
+            </div>
+                <div class="grid-container">
+                    <div class="item1">
+                        <figure class="product-box">
+                            <img 
+                                class="product-box-img" 
+                                src="../images/vr/teslasuit2.webp" 
+                                alt="The full body haptic suit - Tesla brand">
+                                <br>
+                            <figcaption class="product-text">
+                                <strong>Full Haptic Suit</strong>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="item2">
+                        <figure class="product-box">
+                            <img 
+                                class="product-box-img" 
+                                src="../images/vr/headset-samsung.jpg" 
+                                alt="The VR headset - Samsung brand">
+                                <br>
+                                <figcaption class="product-text">
+                                    <strong>VR Samsung Headset</strong>
+                                </figcaption>
+                        </figure>
+                    </div>
+                    <div class="item3">
+                        <figure class="product-box">
+                            <img 
+                                class="product-box-img" 
+                                src="../images/vr/approach-link-1.png"  
+                                alt="A neural interface chip">
+                                <br>
+                                <figcaption class="product-text">
+                                    <strong>A neural interface link</strong>
+                                </figcaption>
+                        </figure>
+                    </div>
+                    <div class="item4">
+                        <figure class="product-box">
+                            <img 
+                                class="product-box-img" 
+                                src="../images/vr/virtualizer.png" 
+                                alt="an omni-directional treadmill for VR">
+                                <br>
+                                <figcaption class="product-text">
+                                    <strong>An omni-directional treadmill for VR</strong>
+                                </figcaption>
+                        </figure>
+                    </div>
+                </div>                
+                <a href="./future2.html">
+                    <button id="products-btn">View More Products</button>
+                </a>          
+        </section>
+    </main>
+    <footer>        
+        <form id="footer-form">
+            <h5>Let Me Know</h5>
+            <label for="name">Your Name</label>
+            <input type="text" id="name">
+            <label for="email">Your Email Address</label>
+            <input type="email" id="email">
+            <input id="form-btn" type="submit" value="Keep me Posted!" aria-label="submit form button">
+        </form>
+        <small class="copy">Copyright &copy; DDVR 2023</small>
+    </footer>
+</body>
+</html>
