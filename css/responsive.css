@@ -143,27 +143,23 @@
         padding: 10px;
     }
 
+    .info-box {
+        justify-content: center;
+        align-items: center ;
+    }
+
+    .info-box img {
+        height: 170px;
+        width: 170px;
+    }
+
     /* mobile cta section */
 
     .cta-section {
-        display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
-    }
-
-    .cta-banner {        
-        margin-bottom: 10px;
-    }
-
-    .cta-banner aside {
-        padding: 10px;
-        margin-bottom: -20px;
-    }
-
-    .cta-btn {
-        margin-bottom: 10px;
-    }
+    }   
 
     /* mobile footer */
     footer {

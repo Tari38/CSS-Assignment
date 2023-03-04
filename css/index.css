@@ -77,25 +77,29 @@ button {
 .flex {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+}
+
+.info-box { 
+    display: flex;   
+    flex-direction: column; 
     justify-content: space-evenly;
     align-items: center;
-    margin: 20px auto;
-}
-
-.col {
-    width: 150px;
-}
-.info-box {    
-    border: 3px solid #3882f6;
-    height: 110px;
-    justify-content: space-evenly;
-    width: 110px;
-    border-radius: 10%;
-    margin: auto;
+    width: 170px;  
+    margin: 20px;    
 } 
 
-.info-text {
-    align-self: flex-end;
+.info-box img {
+    border: 3px solid #3882f6;
+    border-radius: 10%;
+    height: 170px;
+    width: 170px;
+    vertical-align: top;
+}
+
+.info-box > .info-text {
     text-align: center;
     color: #56595f;
     font-size: 12px;
@@ -142,8 +146,7 @@ button {
 /* start call to action section */
 
 .cta-section {
-    display: flex;
-    width: 100vw;
+    display: flex;    
     margin: auto;
     padding: 5% 0;
     justify-content: center;
