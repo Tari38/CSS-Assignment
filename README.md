@@ -7,7 +7,6 @@
 -   @Tari38  
 -   @AntQua  
 -   @andijeong95  
--   @blockchaindotjs 
 -   @ariel-lima
 
 ---

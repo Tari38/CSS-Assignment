@@ -1,0 +1,33 @@
+/* start header / nav section  */
+header, .hero-section  {
+    display: flex;
+    justify-content: space-between;
+    background-color: #1f2937;
+    padding: 1% 10%;
+}
+
+header {
+    margin-bottom: 0px;
+}
+
+.header-logo {
+    font-size: 24px;
+    color: #f9faf8;
+    align-self: center;
+    width: 30%;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 60%;
+}
+
+.nav-link {
+    align-self: center;
+    text-decoration: none;
+    font-size: 18px;
+    color: #e5e7eb;    
+    margin: 0 10px;
+}
+/* end header / nav section  */

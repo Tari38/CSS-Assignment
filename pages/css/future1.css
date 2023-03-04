@@ -63,8 +63,8 @@ button:hover, #form-btn:hover, #products-btn:hover {
 /* start header / nav section  */
 header, .hero-section  {
     display: flex;
-    /* align-items: center; */
     text-align: center;
+    justify-content: space-between;
     background-image: linear-gradient(to left, #4c0ae7, #004cf9, #006eff, #0089ff, #00a2ff, #29aaff, #3fb2ff, #52b9fe, #70b4ff, #8caeff, #a5a8fc, #bca1f4);    
 }
 
@@ -97,8 +97,8 @@ nav {
 .hero-section {
     display: flex;
     flex-direction: column;
-    padding: 5%;
-    margin: 20px 0;
+    padding: 0 5%;
+    margin: 0;
     background-image: radial-gradient(circle, #4c0ae7, #004cf9, #006eff, #0089ff, #00a2ff, #29aaff, #3fb2ff, #52b9fe, #70b4ff, #8caeff, #a5a8fc, #bca1f4);
 }
 

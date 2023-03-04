@@ -1,0 +1,166 @@
+/* responsiveness */
+
+@media only screen and (max-width: 768px) {
+    .cta-section, .cta-banner {
+        width: 100vw;    
+    }
+    aside p {
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    body {
+        width: 100vw;
+        padding: 0;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .hero-section, .info-section, .quote-section, .cta-section {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0 !important;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: auto;
+    }
+
+    .hero-col1, .hero-col2, .info-col, .cta-banner {
+        width: 100vw;
+        margin: auto;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-section p {
+        padding: 10px;
+    }
+
+    .info-row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cta-banner, aside {
+        flex-direction: column;
+        line-height: normal;
+        height: auto;
+        width: 100vw;
+    }
+
+    aside p {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .quote-section q {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .grid {
+        flex-direction: column;
+    }
+
+    .cta-banner {
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+}
+
+/* e.g Galaxy fold mobile */
+@media only screen and (max-width: 280px) {
+
+    body {
+        width: 100vw;
+        padding: 0;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    header {
+        justify-content: space-evenly;  
+        height: auto; 
+        padding: 0 5px;
+    }
+
+    .header-logo {
+        visibility: hidden;
+    }
+
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-link {
+        display: inline-block;
+        font-size: 14px;
+        width: 200px;
+        padding-bottom: 5px;
+    }
+
+    /* mobile hero section */
+    
+    .hero-section {
+        width: 100vw;
+        padding: 0 !important;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .hero-section h1 {
+        font-size: 28px;
+    }
+
+    .hero-section p {
+        width: 90%;
+        font-size: 16px;
+        text-align: center;
+        padding-bottom: 5px;
+        margin: auto;
+    }
+
+    .placeholder {
+        width: 100%;
+        padding: 0;
+    }
+    
+    /* mobile quote section */
+    
+    .quote-section {
+        padding: 10px;
+    }
+
+    .quote-section q, .legend {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    /* mobile cta section */
+    .cta-banner {
+        width: 100vw;
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+
+    aside p {
+        padding: 5px;
+    }
+
+    .cta-btn {
+        margin: 5px 0;
+    }
+
+    /* mobile footer */
+    footer {
+        padding: 10px;
+    }
+}

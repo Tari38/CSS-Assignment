@@ -22,59 +22,17 @@ button {
     margin: 5px 0;
 }
 
-/* start header / nav section  */
-header, .hero-section  {
-    display: flex;
-    justify-content: space-between;
-    background-color: #1f2937;
-    padding: 1% 5%;
-}
-
-header{
-    margin-bottom: 0px;
-}
-
-.header-logo {
-    font-size: 24px;
-    color: #f9faf8;
-    align-self: center;
-    width: 30%;
-    margin-left: 10px;
-}
-
-nav {
-    display: flex;
-    justify-content: flex-end;
-    width: 60%;
-}
-
-.nav-link {
-    align-self: center;
-    text-decoration: none;
-    font-size: 18px;
-    color: #e5e7eb;    
-    margin: 0 20px;
-}
-/* end header / nav section  */
-
-/* ---------------------------------------- */
-
 /* start hero section */
 .hero-section {
-
-    padding: 5%;
-
-    justify-content: center;
+    justify-content: space-evenly;
+    height: auto;
+    padding: 10% !important;
 }
 
 .hero-col1 {
     display: flex;
     flex-direction: column;
-
     width: 40vw;
-
-    padding: 10px;
-    margin: 0 10px;
 }
 
 .hero-section h1 {
@@ -85,16 +43,15 @@ nav {
 
 .hero-section p  {
     font-size: 18px;
-    margin-top: -20px;
+    margin-top: -30px;
     color: #e5e7eb;
+    padding-right: 10px;
 }
 
 .hero-col2 {
     display: flex;
     background-color: #808080;
-
     width: 40vw;
-
     justify-content: center;    
 }
 
@@ -244,134 +201,3 @@ footer {
 }
 
 /* end footer section */
-
-/* responsiveness */
-
-@media only screen and (max-width: 768px) {
-    .cta-section, .cta-banner {
-        width: 100vw;    
-    }
-    aside p {
-        padding: 10px;
-    }
-}
-
-@media only screen and (max-width: 640px) {
-    section {
-        margin: 10px 0;
-        padding: 10px 0;
-    }
-    
-    .hero-section, .info-section, .quote-section, .cta-section {
-        display: flex;
-        flex-direction: column;
-        margin: 0;
-        padding: 0;
-        justify-content: center;
-        align-items: center;
-        width: 100vw;
-        height: auto;
-    }
-
-    .hero-col1, .hero-col2, .info-col, .cta-banner {
-        width: 100vw;
-        margin: auto;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .info-row {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .cta-banner, aside {
-        flex-direction: column;
-        line-height: normal;
-        height: auto;
-        width: 100vw;
-    }
-
-    aside p {
-        width: 90%;
-        padding: 10px;
-    }
-
-    .quote-section q {
-        font-size: 28px;
-        text-align: center;
-    }
-
-    .grid {
-        flex-direction: column;
-    }
-
-    .cta-banner {
-        padding: 5px;
-        margin-bottom: 10px;
-    }
-}
-
-/* Galaxy fold mobile */
-@media only screen and (max-width: 280px) {
-
-    header {
-        justify-content: space-evenly;  
-        height: 100px; 
-        padding: 0 5px;
-    }
-
-    .header-logo {
-        margin-left: -95px;
-    }
-
-    nav {
-        flex-direction: row;
-        width: 100vw;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-
-    .nav-link {
-        font-size: 14px;
-    }
-
-    /* mobile hero section */
-    
-    .hero-section {
-        width: 100vw;
-        padding: 0;
-    }
-    
-    .hero-section h1 {
-        font-size: 28px;
-    }
-
-    .hero-section p {
-        width: 90vw;
-        font-size: 16px;
-        text-align: center;
-        padding-bottom: 5px;
-        margin: auto;
-    }
-
-    .quote-section q, .legend {
-        font-size: 18px;
-        padding: 0;
-    }
-
-    .cta-banner {
-        width: 100vw;
-        padding: 5px;
-        margin-bottom: 10px;
-    }
-
-    aside p {
-        padding: 5px;
-    }
-
-    .cta-btn {
-        margin: 5px 0;
-    }
-}
