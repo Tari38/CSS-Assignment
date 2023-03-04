@@ -28,3 +28,12 @@
 -   [ X ] - Add 2 more pages.  
     -   future1
     -   future2
+
+## Blockers & Learning
+
+1.  Time zones were a big issue trying to coordinate - if working as a group again, we must
+    be more proactive and organised sooner.    
+
+2.  Code becoming increasingly longer in CSS - in future, break down into separate files for easier bug-fixing etc.    
+
+3.  Experience across the team was widely varied, especially with the use of GitHub and how to collaborate.  
