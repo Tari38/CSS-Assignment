@@ -65,12 +65,12 @@ header, .hero-section  {
     display: flex;
     /* align-items: center; */
     text-align: center;
-    background-image: linear-gradient(to left, #4c0ae7, #004cf9, #006eff, #0089ff, #00a2ff, #29aaff, #3fb2ff, #52b9fe, #70b4ff, #8caeff, #a5a8fc, #bca1f4);
-    padding: 1% 5%;
+    background-image: linear-gradient(to left, #4c0ae7, #004cf9, #006eff, #0089ff, #00a2ff, #29aaff, #3fb2ff, #52b9fe, #70b4ff, #8caeff, #a5a8fc, #bca1f4);    
 }
 
 header {
     justify-content: space-between;
+    padding: 1% 5%;
 }
 
 nav {
