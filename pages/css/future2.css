@@ -121,7 +121,11 @@ nav {
   text-align: right;
 }
 
+.contact > a {
+  visibility: hidden;
+}
 .contact > a > i {
+  visibility: visible;
   margin: 0 5px;
   font-size: 2rem;
   color: #fff;  
