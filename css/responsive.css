@@ -78,8 +78,7 @@
 
     body {
         width: 100vw;
-        padding: 0;
-        margin: auto;
+        padding: 0;        
         display: flex;
         flex-direction: column;
     }
@@ -110,7 +109,6 @@
     /* mobile hero section */
     
     .hero-section {
-        width: 100vw;
         padding: 0 !important;
         justify-content: center;
         align-items: center;
@@ -129,8 +127,9 @@
     }
 
     .placeholder {
-        width: 100%;
-        padding: 0;
+        height: auto;
+        padding: 10px;
+        margin: auto;
     }
     
     /* mobile quote section */
@@ -145,18 +144,25 @@
     }
 
     /* mobile cta section */
-    .cta-banner {
-        width: 100vw;
-        padding: 5px;
+
+    .cta-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cta-banner {        
         margin-bottom: 10px;
     }
 
-    aside p {
-        padding: 5px;
+    .cta-banner aside {
+        padding: 10px;
+        margin-bottom: -20px;
     }
 
     .cta-btn {
-        margin: 5px 0;
+        margin-bottom: 10px;
     }
 
     /* mobile footer */
