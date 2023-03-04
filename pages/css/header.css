@@ -1,0 +1,114 @@
+/* start header / nav section  */
+header, .hero-section  {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    background-image: linear-gradient(to right, #1f2937, #223957, #224a7a, #235b9e, #276cc3, #276cc3, #276cc3, #276cc3, #235b9e, #224a7a, #223957, #1f2937);
+}
+
+header {
+    justify-content: space-between;
+    padding: 1% 5%;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 60%;
+}
+
+.nav-link {
+    align-self: center;
+    text-decoration: none;
+    font-size: 18px;
+    color: #e5e7eb;    
+    margin: 0 10px;
+}
+
+/* end header / nav section  */
+
+/* start header logo  */
+
+.header-logo {
+    height: 120px;
+    border-radius: 50%;
+}
+
+.header-logo:hover {
+    animation-name: spin;
+    animation-direction: alternate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes spin {
+    from { 
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* HEADER RESPONSIVENESS */
+
+/* galaxy fold */
+@media only screen and (max-width: 280px) {
+    header {
+        justify-content: space-evenly;  
+        height: 100px; 
+    }
+  
+    .header-logo {
+        margin-left: -145px;
+    }
+  
+    nav {
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+    }
+  
+    .nav-link {
+        font-size: 18px;
+        color: #fff;
+    }
+}
+
+@media only screen and (max-width: 445px) {
+    header {
+        justify-content: space-evenly;  
+        height: 100px; 
+    }
+
+    .header-logo {
+        margin-left: -150px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .nav-link {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    header {
+        width: 100vw;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}

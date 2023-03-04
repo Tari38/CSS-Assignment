@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+}
+
+.parallax {
+    background-image: url("../../images/vr/ARVR_DigMar_Blog\ Image.png");
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+* {
+    font-family: "Roboto", sans-serif;
+    transition: 1s ease-in-out;
+}
+
+/* global buttons */
+
+#hero-btn, #form-btn, #products-btn {
+    background-color: #1f2937;
+    color: #fff;
+    padding: 10px;
+    width: 200px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 900;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px #223957;
+    margin: 10px 0;
+}
+
+#hero-btn:hover, #form-btn:hover, #products-btn:hover {
+    transform: scale(1.02);
+    background-image: none;
+    background-color: #0f3264;
+    color: #fff;
+    transition: 0.2s ease-in-out;
+}
+
+#hero-btn {
+    margin: 0 10px;
+}
+
+/* RESPONSIVENESS */
+
+@media only screen and (max-width: 280px) {
+    body {
+        background-color: #1f2937;       
+    }
+    /* mobile buttons */
+    button {
+        display: block;
+        width: 70vw;
+        margin: auto;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 445px) {
+    body {
+        width: 100vw; 
+        background-color: #1f2937;       
+    }
+    /* mobile buttons */
+    #hero-btn, #products-btn {
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 640px) {
+    .parallax {
+        background-image: none;
+        background-color: #1f2937;
+    }
+}
