@@ -1,6 +1,6 @@
 # Brainnest CSS-Assignment
 
-(link to github pages will go here when ready)
+[GitHub Pages]https://tari38.github.io/CSS-Assignment/
 
 ---
 # The Team
@@ -25,4 +25,6 @@
 -   [ X ] - Make the homepage as close to the design provided, possible.   
 ![screenshot website clone](./images/site1.png?raw=true "Example")   
 ![screenshot website clone](./images/site2.png?raw=true "Example2") 
--   [ ] - Add 2 more pages.  
+-   [ X ] - Add 2 more pages.  
+    -   future1
+    -   future2
