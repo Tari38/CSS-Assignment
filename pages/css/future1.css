@@ -210,6 +210,11 @@ nav {
     text-align: center;
 }
 
+.products-section > a {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 /* end product section */
 
 /* ---------------------------------------- */
@@ -253,6 +258,11 @@ label, input {
 .copy {
     color: #fff;
     text-align: center;
+}
+
+footer > a{
+    align-self: start;
+    color: #fff;
 }
 
 /* end footer section */
