@@ -3,6 +3,13 @@
   transition: 1s ease-in-out;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
 .header-logo {
   height: 120px;
   border-radius: 50%;
@@ -25,24 +32,17 @@
 } 
 
 button, #form-btn {
-  background-color: #4C0AE7;
+  background-color: #1f2937;
   color: #fff;
   padding: 10px;
-  width: 50%;
+  width: 200px;
   border: none;
-  border-radius: 20px;
+  border-radius: 10px;
   font-weight: 900;
   text-align: center;
   cursor: pointer;
-  box-shadow: 4px 4px 2px #3f1f80;
-  margin: 5px 0;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    width: 100vw;
+  box-shadow: 2px 2px 2px #223957;
+  margin: 10px 0;
 }
 
 .parallax {
@@ -61,23 +61,22 @@ header {
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  background-image: linear-gradient(to left, #4c0ae7, #004cf9, #006eff, #0089ff, #00a2ff, #29aaff, #3fb2ff, #52b9fe, #70b4ff, #8caeff, #a5a8fc, #bca1f4);
+  background-image: linear-gradient(to right, #1f2937, #223957, #224a7a, #235b9e, #276cc3, #276cc3, #276cc3, #276cc3, #235b9e, #224a7a, #223957, #1f2937);
   padding: 1% 5%;
 }
 
 nav {
   display: flex;
   justify-content: flex-end;
-  align-items: center;
   width: 60%;
 }
 
 .nav-link {
   align-self: center;
   text-decoration: none;
-  font-size: 22px;
-  color: #e5e7eb;
-  margin: 0 20px;
+  font-size: 18px;
+  color: #e5e7eb;    
+  margin: 0 10px;
 }
 
 /* end header / nav section  */
@@ -85,13 +84,12 @@ nav {
 /* start team cards section  */
 
 .container {
-  background-color: rgba(165, 168, 252, 0.849);
+  background-color: #235b9ed8;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
-
 
 .member-card img {
   height: 150px;
@@ -108,13 +106,13 @@ nav {
   margin: 25px;
   background-color: #4a5e77;
   color: #e5e7eb; 
-  border-bottom: 6px solid #3f1f80;
+  border-bottom: 6px solid #223957;
   border-radius: 10px;
   padding: 20px;
 }
 
 .member-card h1 {
-  color: #70e4f3; 
+  color: #fff; 
   text-align: center;
   font-size: 20px;
 }
@@ -126,7 +124,7 @@ nav {
 .contact > a > i {
   margin: 0 5px;
   font-size: 2rem;
-  color: #70e4f3;  
+  color: #fff;  
 }
 
 /* end team cards section  */
@@ -134,73 +132,71 @@ nav {
 /* start footer section */
 
 footer {
-  width: 100vw;
   text-align: center;
   background-color: #1f2937;
   display: flex;
-  justify-content: space-around;
-  padding: 3%;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2%;
+  margin: auto;
 }
 
 #footer-form {
-  background-image: linear-gradient(
-    to left,
-    #4c0ae7,
-    #004cf9,
-    #006eff,
-    #0089ff,
-    #00a2ff,
-    #29aaff,
-    #3fb2ff,
-    #52b9fe,
-    #70b4ff,
-    #8caeff,
-    #a5a8fc,
-    #bca1f4
-  );
+  background-color: #3882f6;
   padding: 10px;
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-items: center;
   border-radius: 10px;
 }
 
 #footer-form h5 {
   color: #000;
+  font-size: 16px;
 }
 
 label, input {
   padding: 0 10px;
   font-size: 14px;
+  font-weight: bold;
 } 
+
+input {
+  height: 40px;
+}
 
 #form-btn { 
   width: auto;
   margin: 0 10px;
+  border-radius: 10px;
 }
 
 .copy {
   color: #fff;
   text-align: center;
-  align-self: center;
 }
 
 .to-top-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: inline-block;
 }
 
 .to-top-btn > a {
   color: #fff;
   text-decoration: none;
-  flex-direction: column;
 }
 
 .to-top-btn > a > i {
   margin: 0 5px;
-  font-size: 2rem;
-  color: #70e4f3;  
+  font-size: 1.1rem;
+  color: #fff;  
+  padding: 15px;
+  border: #fff 1px solid;
+  border-radius: 50%;
+}
+
+.to-top-btn > a > i:hover {
+  background-color: #3882f6;
 }
 
 /* end footer section */
@@ -235,9 +231,8 @@ label, input {
       justify-content: center;
       align-items: center;
   } 
-      
+
   #footer-form {
-      width: 100vw;
       flex-direction: column;
   }
 }
@@ -245,7 +240,6 @@ label, input {
 /* Galaxy fold mobile */
 @media only screen and (max-width: 280px) {
   body {
-      width: 100vw; 
       background-color: #1f2937;       
   }
 
@@ -295,25 +289,23 @@ label, input {
   /* mobile buttons */
   button {
       display: block;
-      width: 70vw;
       margin: auto;
       text-align: center;
   }
 
   /* mobile footer */
   footer {
-      display: flex;
-      flex-direction: column;
-      /* width: 100vw; */
-      background-image: none;
-      background-color: #3f1f80;
-  }
+    display: flex;
+    flex-direction: column;
+    background-image: none;
+    background-color: #223957;
+}
 
-  #footer-form {
-      align-items: center;
-  }
+#footer-form {
+    align-items: center;
+}
 
-  .copy {
-      margin: 10px 0;
-  }
+.copy {
+    margin: 10px 0;
+}
 }
