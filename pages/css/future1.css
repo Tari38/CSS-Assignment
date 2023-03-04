@@ -40,7 +40,7 @@ body {
     transition: 1s ease-in-out;
 }
 
-button, #form-btn {
+#hero-btn, #form-btn, #products-btn {
     background-color: #4C0AE7;
     color: #fff;
     padding: 10px;
@@ -53,11 +53,15 @@ button, #form-btn {
     box-shadow: 4px 4px 2px #3f1f80;
 }
 
-button:hover, #form-btn:hover, #products-btn:hover {
+#hero-btn:hover, #form-btn:hover, #products-btn:hover {
     transform: scale(1.1);
     background-color: #70e4f3;
     color: #3f1f80;
     transition: 0.2s ease-in-out;
+}
+
+#hero-btn {
+    margin: 0 10px;
 }
 
 /* start header / nav section  */
@@ -248,11 +252,12 @@ footer {
 
 label, input {
     padding: 0 10px;
+    font-size: 14px;
 } 
 
 #form-btn { 
     width: auto;
-    margin: 10px;
+    margin: 0 10px;
 }
 
 .copy {
@@ -260,14 +265,33 @@ label, input {
     text-align: center;
 }
 
-footer > a{
-    align-self: start;
+.to-top-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+.to-top-btn > a {
     color: #fff;
+    text-decoration: none;
+    flex-direction: column;
+}
+  
+.to-top-btn > a > i {
+    margin: 0 5px;
+    font-size: 2rem;
+    color: #70e4f3;  
 }
 
 /* end footer section */
 
 /* responsiveness */
+
+@media only screen and (max-width: 768px) {
+    footer {
+        flex-direction: column;
+    }
+} 
 
 @media only screen and (max-width: 640px) {
     .parallax {
